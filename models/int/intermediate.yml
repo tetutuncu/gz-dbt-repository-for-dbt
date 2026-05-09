@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: int_sales_customer
+    description: "adds customer info to each sale"
+    columns:
+      - name: turnover
+        description: "turnover of the sale"
+        tests:
+          - not_null
+      - name: purchase_cost
+        description: "purchase cost of the sale"
+        tests:
+          - not_null
+      - name: margin
+        description: "turnover - purchase cost"
+        tests:
+          - not_null
+      - name: customer_name
+        description: "name of the customer"
+        tests:
+          - not_null
